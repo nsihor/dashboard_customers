@@ -1,7 +1,7 @@
 import './App.css';
 import {Routes, Route} from "react-router-dom";
-import Main from "./pages/Main";
 import Layout from "./components/Layout/Layout";
+import Main from "./pages/Main";
 import Product from "./pages/Product";
 import Customers from "./pages/Customers";
 import Income from "./pages/Income";
@@ -9,6 +9,7 @@ import Promote from "./pages/Promote";
 import Help from "./pages/help";
 
 function App() {
+
   return (
     <Routes>
       <Route path='/' element={<Layout/>}>
