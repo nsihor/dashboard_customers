@@ -1,0 +1,14 @@
+.title {
+  display: flex;
+  flex-direction: column;
+  gap: 7px;
+
+  font-size: 22px;
+  letter-spacing: -0.22px;
+
+  &__addText {
+    font-size: 14px;
+    letter-spacing: -0.14px;
+    color: var(--text-color-accent);
+  }
+}
