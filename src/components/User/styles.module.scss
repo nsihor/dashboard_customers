@@ -1,0 +1,27 @@
+.user {
+  display: flex;
+  align-items: center;
+
+  &__photo {
+    width: 42px;
+    height: 42px;
+    margin-right: 12px;
+  }
+
+  &__info {
+    display: flex;
+    flex-direction: column;
+
+    &__name {
+      font-size: 14px;
+      letter-spacing: 0.14px;
+    }
+
+    &__role {
+      font-size: 12px;
+      letter-spacing: 0.12px;
+      color: #757575;
+    }
+  }
+
+}
