@@ -1,0 +1,10 @@
+.container {
+  padding: 30px 38px 40px;
+  background-color: var(--bg-color-w);
+  border-radius: 30px;
+
+  &__top {
+    display: flex;
+    justify-content: space-between;
+  }
+}

@@ -2,10 +2,10 @@ import {Routes, Route} from "react-router-dom";
 import Layout from "./components/Layout/Layout";
 import Main from "./pages/Main";
 import Product from "./pages/Product";
-import Customers from "./pages/Customers";
+import Customers from "./pages/Customers/Customers";
 import Income from "./pages/Income";
 import Promote from "./pages/Promote";
-import Help from "./pages/help";
+import Help from "./pages/Help";
 
 function App() {
 
