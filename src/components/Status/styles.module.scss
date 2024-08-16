@@ -1,0 +1,27 @@
+.status {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  width: 80px;
+  height: 29px;
+
+  border-radius: 4px;
+  font-size: 14px;
+
+  &__text {
+
+  }
+}
+
+.status_active {
+  color: #008767;
+  border: solid 2px #00B087;
+  background-color: #16C09861;
+}
+
+.status_inactive {
+  color: #DF0404;
+  border: solid 2px #DF0404;
+  background-color: #FFC5C5;
+}
