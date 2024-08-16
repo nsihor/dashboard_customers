@@ -1,0 +1,25 @@
+.title{
+  display: flex;
+  align-items: center;
+
+  height: 39px;
+
+  &__svg {
+    width: 31px;
+    height: 31px;
+
+    margin-right: 8px;
+  }
+
+  &__text{
+    font-size: 26px;
+    letter-spacing: 0.26px;
+  }
+
+  &__v{
+    font-size: 10px;
+    letter-spacing: -0.1px;
+    font-weight: 500;
+    color: #838383;
+  }
+}
