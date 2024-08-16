@@ -1,13 +1,14 @@
 import { NavLink } from "react-router-dom";
+import {useState} from "react";
 import clsx from "clsx";
 import spriteG from "../../images/svg/menu/symbol-defs-g.svg";
 import spriteW from "../../images/svg/menu/symbol-defs-w.svg";
 import styles from "./styles.module.scss";
-import {useState} from "react";
+import {PAGES} from "../../constants";
 
 const MenuLink = ({ page }) => {
     const [hover, setHover] = useState(false)
-    const to = page === 'dashboard' ? '/' : `/${page}`;
+    const to = page === PAGES.DASHBOARD ? '/' : `/${page}`;
     const chosenSprite = (isActive, hover) => isActive || hover ? spriteW : spriteG;
 
     return (
@@ -21,7 +22,7 @@ const MenuLink = ({ page }) => {
                         <use xlinkHref={`${chosenSprite(isActive, hover)}#icon-${page}`}></use>
                     </svg>
                     <span>{page.charAt(0).toUpperCase() + page.slice(1)}</span>
-                    {page !== 'dashboard' &&
+                    {page !== PAGES.DASHBOARD &&
                     <svg className={styles.link__svg_arr}>
                         <use xlinkHref={`${chosenSprite(isActive, hover)}#icon-m-arrow`}></use>
                     </svg>}
