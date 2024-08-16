@@ -1,0 +1,44 @@
+.wrap {
+  width: 100%;
+
+  .link {
+    display: flex;
+    align-items: center;
+
+    width: 100%;
+    height: 46px;
+    border-radius: 8px;
+    padding: 11px 8px 11px 11px;
+
+    font-size: 14px;
+    color: #9197B3;
+
+    &:hover {
+      background-color: var(--accent-color);
+      color: #FFF;
+    }
+
+    &:focus {
+      background-color: var(--accent-color);
+      color: #FFF;
+    }
+
+    &__svg {
+      width: 24px;
+      height: 24px;
+
+      margin-right: 14px;
+    }
+
+    &__svg_arr {
+      width: 16px;
+      height: 16px;
+      margin-left: auto;
+    }
+  }
+
+  .link_active {
+    background-color: var(--accent-color);
+    color: #FFF;
+  }
+}
