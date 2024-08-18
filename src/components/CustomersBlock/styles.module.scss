@@ -4,18 +4,19 @@
   background-color: var(--bg-color-w);
   border-radius: 30px;
 
-  &__container {
+  &__top, &__bottom {
+    display: flex;
+    justify-content: space-between;
     padding: 0 38px;
+  }
 
-    &_top {
-      display: flex;
-      justify-content: space-between;
-      padding-bottom: 40px;
-    }
+  &__top {
+    margin-bottom: 40px;
   }
 
   &__table {
     padding: 0 38px;
+    margin-bottom: 30px;
     overflow-x: auto;
     -webkit-overflow-scrolling: touch;
 
