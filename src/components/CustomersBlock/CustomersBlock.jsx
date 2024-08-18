@@ -4,6 +4,7 @@ import Search from "../Search/Search";
 import Table from "../Table/Table";
 import {customers} from "../../constants";
 import CustomersPageInfo from "../CustomersPageInfo/CustomersPageInfo";
+import PaginationButtons from "../PaginationButtons/PaginationButtons";
 
 const CustomersBlock = () => {
     return (
@@ -17,6 +18,7 @@ const CustomersBlock = () => {
             </div>
             <div className={styles.block__bottom}>
                 <CustomersPageInfo/>
+                <PaginationButtons/>
             </div>
             </div>
     )

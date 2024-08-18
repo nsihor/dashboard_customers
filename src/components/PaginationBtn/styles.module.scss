@@ -1,0 +1,20 @@
+.btn_active, .btn_inactive{
+  width: 25px;
+  height: 25px;
+  border-radius: 4px;
+
+  font-size: 12px;
+  letter-spacing: -0.12px;
+}
+
+.btn_inactive {
+  color: #404B52;
+  border: 1px solid var(--border-color);
+  background-color: #F5F5F5;
+}
+
+.btn_active {
+  color: #FFFFFF;
+  border: none;
+  background-color: var(--accent-color);
+}
