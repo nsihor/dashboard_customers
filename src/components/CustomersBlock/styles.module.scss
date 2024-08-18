@@ -1,10 +1,26 @@
-.container {
-  padding: 30px 38px 40px;
+.block {
+  max-width: calc(100vw - 472px);
+  padding: 30px 0 40px;
   background-color: var(--bg-color-w);
   border-radius: 30px;
 
-  &__top {
-    display: flex;
-    justify-content: space-between;
+  &__container {
+    padding: 0 38px;
+
+    &_top {
+      display: flex;
+      justify-content: space-between;
+      padding-bottom: 40px;
+    }
+  }
+
+  &__table {
+    padding: 0 38px;
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+
+    @media screen and (min-width: 1370px) {
+      overflow-x: hidden;
+    }
   }
 }

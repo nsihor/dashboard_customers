@@ -1,0 +1,21 @@
+.thead {
+  position: relative;
+
+  &::after {
+    content: "";
+    position: absolute;
+    left: -38px;
+    right: -38px;
+    bottom: 0;
+    height: 1px;
+    background-color: #EEEEEE;
+  }
+
+  th {
+    padding-bottom: 14px;
+
+    color: var(--text-color-light);
+    font-weight: 500;
+    text-align: start;
+  }
+}
