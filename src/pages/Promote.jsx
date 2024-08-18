@@ -1,5 +1,5 @@
 const Promote = () => (
-    <div>
+    <div className='page--empty'>
         <h2>Promote</h2>
     </div>
 )

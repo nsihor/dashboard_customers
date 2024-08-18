@@ -1,5 +1,5 @@
 const Main = () => (
-    <div>
+    <div className='page--empty'>
         <h2>Dashboard</h2>
     </div>
 )

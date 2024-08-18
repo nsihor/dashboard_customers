@@ -1,5 +1,5 @@
 const Help = () => (
-    <div>
+    <div className='page--empty'>
         <h2>Help</h2>
     </div>
 )
