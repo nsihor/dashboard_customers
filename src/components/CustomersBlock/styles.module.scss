@@ -4,10 +4,15 @@
   background-color: var(--bg-color-w);
   border-radius: 30px;
 
+  @media screen and (min-width: 1440px) {
+    max-width: 968px;
+    margin: 0 auto;
+  }
+
   &__top, &__bottom {
     display: flex;
     justify-content: space-between;
-    padding: 0 38px;
+    padding: 0 40px;
   }
 
   &__top {
@@ -15,7 +20,7 @@
   }
 
   &__table {
-    padding: 0 38px;
+    padding: 0 40px;
     margin-bottom: 30px;
     overflow-x: auto;
     -webkit-overflow-scrolling: touch;
