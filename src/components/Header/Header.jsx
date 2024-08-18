@@ -1,5 +1,5 @@
 import Logo from "../Logo/Logo";
-import {useState} from "react";
+import {useEffect, useState} from "react";
 import styles from "./styles.module.scss"
 import menuSvg from "../../images/svg/burger-menu.svg"
 import closeSvg from "../../images/svg/close.svg"
@@ -9,6 +9,18 @@ const Header = () => {
     const [isMenuOpen, setIsMenuOpen] = useState(false);
     const svg = isMenuOpen ? `${closeSvg}#close` : `${menuSvg}#burger`;
 
+    useEffect(() => {
+        if (isMenuOpen) {
+            document.body.classList.add("overflow-hidden");
+        } else {
+            document.body.classList.remove("overflow-hidden");
+        }
+
+        return () => {
+            document.body.classList.remove("overflow-hidden");
+        };
+    }, [isMenuOpen]);
+
     return (
         <>
             <header className={styles.header}>
@@ -17,7 +29,7 @@ const Header = () => {
                     <use xlinkHref={svg}></use>
                 </svg>
             </header>
-            {isMenuOpen && <MobMenu/>}
+            {isMenuOpen && <MobMenu handleCloseMenu={() => setIsMenuOpen(false)}/>}
         </>
     )
 }

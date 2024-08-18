@@ -3,10 +3,10 @@ import MenuLinkList from "../MenuLinkList/MenuLinkList";
 import User from "../User/User";
 import {users} from "../../constants";
 
-const MobMenu = () => {
+const MobMenu = ({handleCloseMenu}) => {
     return (
         <div className={styles.container}>
-            <MenuLinkList/>
+            <MenuLinkList handleCloseMenu={handleCloseMenu}/>
             <User user={users[0]}/>
         </div>
     )

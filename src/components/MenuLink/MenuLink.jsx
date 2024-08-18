@@ -6,7 +6,7 @@ import spriteW from "../../images/svg/menu/symbol-defs-w.svg";
 import styles from "./styles.module.scss";
 import {PAGES} from "../../constants";
 
-const MenuLink = ({ page }) => {
+const MenuLink = ({ page, handleCloseMenu }) => {
     const [hover, setHover] = useState(false)
     const to = page === PAGES.DASHBOARD ? '/' : `/${page}`;
     const chosenSprite = (isActive, hover) => isActive || hover ? spriteW : spriteG;
@@ -15,6 +15,7 @@ const MenuLink = ({ page }) => {
         <NavLink className={styles.wrap} to={to}
                  onMouseEnter={() => setHover(true)}
                  onMouseLeave={() => setHover(false)}
+                 onClick={handleCloseMenu}
         >
             {({ isActive }) => (
                 <div className={clsx(styles.link, isActive && styles.link_active)}>
