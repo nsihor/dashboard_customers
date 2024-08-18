@@ -21,6 +21,12 @@ const Header = () => {
         };
     }, [isMenuOpen]);
 
+    const handleCloseMenu = () => {
+        if (isMenuOpen) {
+            setIsMenuOpen(false)
+        }
+    }
+
     return (
         <>
             <header className={styles.header}>
@@ -29,7 +35,7 @@ const Header = () => {
                     <use xlinkHref={svg}></use>
                 </svg>
             </header>
-            {isMenuOpen && <MobMenu handleCloseMenu={() => setIsMenuOpen(false)}/>}
+            {isMenuOpen && <MobMenu handleCloseMenu={handleCloseMenu}/>}
         </>
     )
 }

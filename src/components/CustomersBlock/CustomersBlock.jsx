@@ -30,6 +30,7 @@ const CustomersBlock = () => {
                 customer.name.toLowerCase().includes(value.toLowerCase())
             );
             setFilteredCustomers(filteredArray);
+            setCurrentPage(1)
         }
     }
 
