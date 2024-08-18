@@ -94,7 +94,7 @@ const countries = [
     "Netherlands", "Japan", "South Korea", "India", "Mexico", "Ukraine"
 ]
 
-for (let i = 8; i < 256; i++) {
+for (let i = 8; i < 260; i++) {
     const customer = {
         id: i,
         name: names[Math.floor(Math.random() * names.length)],

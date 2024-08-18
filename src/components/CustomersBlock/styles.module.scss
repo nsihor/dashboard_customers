@@ -1,8 +1,12 @@
 .block {
-  max-width: calc(100vw - 472px);
-  padding: 30px 0 40px;
+  padding: 16px 0;
   background-color: var(--bg-color-w);
   border-radius: 30px;
+
+  @media screen and (min-width: 992px) {
+    max-width: calc(100vw - 472px);
+    padding: 30px 0 40px;
+  }
 
   @media screen and (min-width: 1440px) {
     max-width: 968px;
@@ -12,11 +16,20 @@
   &__top, &__bottom {
     display: flex;
     justify-content: space-between;
-    padding: 0 40px;
+    padding: 0 16px;
+
+    @media screen and (min-width: 992px) {
+      padding: 0 40px;
+    }
   }
 
   &__top {
+    flex-direction: column;
+    text-align: center;
     margin-bottom: 40px;
+    @media screen and (min-width: 600px) {
+      flex-direction: row;
+    }
   }
 
   &__table {
@@ -28,5 +41,20 @@
     @media screen and (min-width: 1370px) {
       overflow-x: hidden;
     }
+  }
+
+  &__bottom {
+    flex-direction: column;
+    gap: 16px;
+    text-align: center;
+
+    @media screen and (min-width: 1200px) {
+      flex-direction: row;
+    }
+  }
+
+  &__noresults{
+    font-size: 22px;
+    text-align: center;
   }
 }

@@ -1,6 +1,11 @@
 .container {
   width: 100%;
-  padding: 41px 95px 258px 71px;
+
+  padding: 16px 16px 32px;
+
+  @media screen and (min-width: 992px) {
+    padding: 41px 95px 258px 71px;
+  }
 
   &__greeting {
     margin-bottom: 51px;

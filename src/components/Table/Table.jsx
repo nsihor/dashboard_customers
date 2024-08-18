@@ -6,7 +6,7 @@ const Table = ({customers}) => {
     return (
         <table className={styles.table}>
             <Thead/>
-            <Tbody customer={customers[0]}/>
+            {customers.map(customer => <Tbody key={customer.id} customer={customer}/>)}
         </table>
     )
 }
