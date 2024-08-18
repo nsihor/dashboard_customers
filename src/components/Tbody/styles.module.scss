@@ -1,3 +1,17 @@
-.thead {
+.tbody {
+  position: relative;
 
+  &::after {
+    content: "";
+    position: absolute;
+    left: 2px;
+    right: 2px;
+    bottom: 0;
+    height: 1px;
+    background-color: #EEEEEE;
+  }
+
+  td {
+    height: 70px;
+  }
 }

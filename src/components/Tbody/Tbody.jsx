@@ -1,8 +1,9 @@
 import Status from "../Status/Status";
+import styles from "./styles.module.scss"
 
 const Tbody = ({customer}) => {
     return (
-        <tbody>
+        <tbody className={styles.tbody}>
             <tr>
                 <td>{customer.name}</td>
                 <td>{customer.company}</td>
