@@ -1,20 +1,20 @@
 {
   "files": {
-    "main.css": "/dashboard_customers/static/css/main.621882ad.css",
-    "main.js": "/dashboard_customers/static/js/main.dedd7749.js",
+    "main.css": "/dashboard_customers/static/css/main.7fad5d27.css",
+    "main.js": "/dashboard_customers/static/js/main.a78f4436.js",
     "static/media/evano.png": "/dashboard_customers/static/media/evano.cc992c57d71a45eb6470.png",
-    "static/media/symbol-defs-g.svg": "/dashboard_customers/static/media/symbol-defs-g.09148cd6c8b9e2bfe247bd75c0de6e5a.svg",
-    "static/media/symbol-defs-w.svg": "/dashboard_customers/static/media/symbol-defs-w.6b637a1d02389e1dc83f8bcfa2c7ecd8.svg",
-    "static/media/logo.svg": "/dashboard_customers/static/media/logo.fbe612668fd85f99dc6a87a14c7d9df2.svg",
+    "static/media/symbol-defs-g.svg": "/dashboard_customers/static/media/symbol-defs-g.3b3e134c9df938a2789a5af1223557b9.svg",
+    "static/media/symbol-defs-w.svg": "/dashboard_customers/static/media/symbol-defs-w.6a9696ab83c364b7b7dc50e761ebc943.svg",
+    "static/media/logo.svg": "/dashboard_customers/static/media/logo.3e20f2f6830e79bfd243852c1f17b6b9.svg",
     "index.html": "/dashboard_customers/index.html",
-    "static/media/close.svg": "/dashboard_customers/static/media/close.dd77ba12230bca8a4df0063ef4b42d7b.svg",
-    "static/media/search.svg": "/dashboard_customers/static/media/search.48d74efcb626dbfb682bcc9deff3b7fc.svg",
-    "static/media/burger-menu.svg": "/dashboard_customers/static/media/burger-menu.6f3d5bbe1970b8d0ea4444532073ea84.svg",
-    "main.621882ad.css.map": "/dashboard_customers/static/css/main.621882ad.css.map",
-    "main.dedd7749.js.map": "/dashboard_customers/static/js/main.dedd7749.js.map"
+    "static/media/close.svg": "/dashboard_customers/static/media/close.23c60ee01fca209678367c385690365c.svg",
+    "static/media/search.svg": "/dashboard_customers/static/media/search.c34845b510727c6c1695f26aa89a0785.svg",
+    "static/media/burger-menu.svg": "/dashboard_customers/static/media/burger-menu.7427800711be13f7518a1aa3c13a5a2e.svg",
+    "main.7fad5d27.css.map": "/dashboard_customers/static/css/main.7fad5d27.css.map",
+    "main.a78f4436.js.map": "/dashboard_customers/static/js/main.a78f4436.js.map"
   },
   "entrypoints": [
-    "static/css/main.621882ad.css",
-    "static/js/main.dedd7749.js"
+    "static/css/main.7fad5d27.css",
+    "static/js/main.a78f4436.js"
   ]
 }
