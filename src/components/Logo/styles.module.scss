@@ -7,8 +7,9 @@
   &__svg {
     width: 31px;
     height: 31px;
-
     margin-right: 8px;
+
+    transition: transform 1s ease;
   }
 
   &__text{
